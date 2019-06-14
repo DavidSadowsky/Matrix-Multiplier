@@ -1,2 +1,2 @@
 # Matrix-Multiplier
-Simple program to easily multiply two matrices together.
+Simple program to multiply two matrices together.
