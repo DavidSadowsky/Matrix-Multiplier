@@ -70,6 +70,7 @@ int main()
 
 				std::cout << "\n";
 
+				
 				// the resulting matrix will have the amount of rows from matrix 1 and the amount of columns from matrix 2
 				int rowResult = row1;
 				int columnResult = column2;
@@ -80,8 +81,8 @@ int main()
 
 				// fills vector with resulting matrix data
 				int sum = 0;
-				for (int x = 0; x < columnResult; x++) {
-					for (int y = 0; y < rowResult; y++) {
+				for (int x = 0; x < row1; x++) {
+					for (int y = 0; y < column2; y++) {
 						for (int j = 0; j < column1; j++) {
 							sum += matrix1[x][j] * matrix2[j][y];
 						}
@@ -94,9 +95,10 @@ int main()
 
 				// transposes resultant matrix
 
+
 				std::cout << "Result Matrix:" << std::endl;
-				for (int x = 0; x < columnResult; x++) {
-					for (int y = 0; y < columnResult; y++) {
+				for (int x = 0; x < row1; x++) {
+					for (int y = 0; y < column2; y++) {
 						std::cout << resultMatrix[x][y] << " ";
 					}
 					std::cout << std::endl;
