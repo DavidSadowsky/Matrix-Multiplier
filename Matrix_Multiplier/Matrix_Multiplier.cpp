@@ -15,7 +15,7 @@ int main()
 		std::cout << "1. Matrix multiplier\n2. Exit\n" << std::endl;
 		int menuChoice;
 		std::cin >> menuChoice;
-		
+
 		if (menuChoice > 2) {
 			std::cout << "Please enter a valid option.\n" << std::endl;
 			continue;
@@ -34,10 +34,7 @@ int main()
 		int column2;
 		std::cin >> row2 >> column2;
 
-		if (row1 != column2) {
-			std::cout << "Error, the inputted matrices are not multipliable." << std::endl;
-		}
-		else if (row2 != column1) {
+		if (column1 != row2) {
 			std::cout << "Error, the inputted matrices are not multipliable." << std::endl;
 		}
 		// fills arrays with matrix elements
@@ -109,7 +106,7 @@ int main()
 
 	}
 
-	
+
 
 
 }
